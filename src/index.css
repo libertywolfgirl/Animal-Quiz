@@ -31,6 +31,17 @@ footer {
   margin-bottom: 10px;
 }
 
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 28.75em) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -39,7 +50,7 @@ footer {
 }
 
 .app {
-  background-color: #252d4a;
+  background-color: #e60000;
   width: 450px;
   min-height: 200px;
   height: min-content;
@@ -97,13 +108,13 @@ button {
   width: 100%;
   font-size: 16px;
   color: #ffffff;
-  background-color: #252d4a;
+  background-color: #e60000;
   border-radius: 15px;
   display: flex;
   padding: 5px;
   justify-content: flex-start;
   align-items: center;
-  border: 5px solid #234668;
+  border: 5px solid #ff1a1a;
   cursor: pointer;
 }
 
@@ -116,7 +127,7 @@ button {
 }
 
 button:hover {
-  background-color: #555e7d;
+  background-color: #e23636;
 }
 
 button:focus {
