@@ -19,17 +19,21 @@ body {
   min-height: 100vh;
 }
 
-.wrapper {
+header {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.intro {
+footer {
+  margin-bottom: 10px;
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }

@@ -44,8 +44,8 @@ export default function App() {
 
   return (
     <div className="wrapper">
-      <div className="intro">
-        <h1>Welcome</h1>
+      <header>
+        <h1>Lily's Animal Quiz</h1>
         <img
           src="https://images.unsplash.com/photo-1579724037206-e0a2fa4e0718?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
           alt="African Grey Parrot"
@@ -55,7 +55,7 @@ export default function App() {
           My name is Lily. I am an African Grey parrot. I love trivia! Can you
           pass my quiz?
         </p>
-      </div>
+      </header>
       <h2>QUIZ</h2>
       <div className="app">
         {/* HINT: replace "false" with logic to display the 
@@ -83,7 +83,7 @@ export default function App() {
           </>
         )}
       </div>
-      <div className="footer">
+      <footer>
         <p>
           Visit my friends{" "}
           <a
@@ -92,9 +92,9 @@ export default function App() {
           >
             here
           </a>
-          .
+          !
         </p>
-      </div>
+      </footer>
     </div>
   );
 }
