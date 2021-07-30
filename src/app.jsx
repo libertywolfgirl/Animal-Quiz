@@ -1,12 +1,12 @@
-// https://www.freecodecamp.org/news/how-to-build-a-quiz-app-using-react/
+// https://www.freecodecamp.org/news/author/chris/
 
 import React, { useState } from "react";
 
 export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  
   const [showScore, setShowScore] = useState(false);
-  
+  const [score, setScore] = useState(0);
+
   const questions = [
     {
       questionText: "What is the capital of France?",
@@ -46,9 +46,11 @@ export default function App() {
     }
   ];
 
-  const handleAnswerButtonClick = (isCorrect) => {
-    if (isCorrect)
-    
+  const handleAnswerButtonClick = isCorrect => {
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+
     const nextQuestion = currentQuestion + 1;
 
     if (nextQuestion < questions.length) {
@@ -76,13 +78,13 @@ export default function App() {
       <div className="app">
         {showScore ? (
           <div className="score-section">
-            You scored 1 out of {questions.length}
+            You scored {score} out of {questions.length}
           </div>
         ) : (
           <>
             <div className="question-section">
               <div className="question-count">
-                <span>Question 1</span>/{questions.length}
+                <span>Question {currentQuestion + 1}</span>/{questions.length}
               </div>
               <div className="question-text">
                 {questions[currentQuestion].questionText}
@@ -91,7 +93,11 @@ export default function App() {
             <div className="answer-section">
               {questions[currentQuestion].answerOptions.map(
                 (answerOption, index) => (
-                  <button onClick={() => handleAnswerButtonClick(answerOption.isCorrect)}>
+                  <button
+                    onClick={() =>
+                      handleAnswerButtonClick(answerOption.isCorrect)
+                    }
+                  >
                     {answerOption.answerText}
                   </button>
                 )
