@@ -3,6 +3,10 @@
 import React, { useState } from "react";
 
 export default function App() {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  
+  const [showScore, setShowScore] = useState(false);
+  
   const questions = [
     {
       questionText: "What is the capital of France?",
@@ -41,8 +45,18 @@ export default function App() {
       ]
     }
   ];
-  
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+
+  const handleAnswerButtonClick = (isCorrect) => {
+    if (isCorrect)
+    
+    const nextQuestion = currentQuestion + 1;
+
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
+    } else {
+      setShowScore(true);
+    }
+  };
 
   return (
     <div className="wrapper">
@@ -60,9 +74,7 @@ export default function App() {
       </header>
       <h2>QUIZ</h2>
       <div className="app">
-        {/* HINT: replace "false" with logic to display the 
-      score when the user has answered all the questions */}
-        {false ? (
+        {showScore ? (
           <div className="score-section">
             You scored 1 out of {questions.length}
           </div>
@@ -72,12 +84,18 @@ export default function App() {
               <div className="question-count">
                 <span>Question 1</span>/{questions.length}
               </div>
-              <div className="question-text">{questions[currentQuestion].questionText}</div>
+              <div className="question-text">
+                {questions[currentQuestion].questionText}
+              </div>
             </div>
             <div className="answer-section">
-              {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-                <button>{answerOption.answerText}</button>
-              ))}
+              {questions[currentQuestion].answerOptions.map(
+                (answerOption, index) => (
+                  <button onClick={() => handleAnswerButtonClick(answerOption.isCorrect)}>
+                    {answerOption.answerText}
+                  </button>
+                )
+              )}
             </div>
           </>
         )}
