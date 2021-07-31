@@ -62,6 +62,12 @@ export default function App() {
     }
   };
 
+  const handleReset = () => {
+    setCurrentQuestion(0);
+    setShowScore(false);
+    setScore(0);
+  };
+
   return (
     <div className="wrapper">
       <header>
@@ -84,7 +90,7 @@ export default function App() {
             </div>
             <div className="refresh">
               <p>Try again?</p>
-              <button className="icon">
+              <button className="icon" onClick={() => handleReset()}>
                 <FontAwesomeIcon icon={faSync} className="refresh" />
               </button>
             </div>

@@ -75,6 +75,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 25px;
+  align-items: center;
 }
 
 .score-section {
@@ -119,6 +120,15 @@ p {
   justify-content: space-between;
 }
 
+.refresh {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 button {
   width: 100%;
   font-size: 16px;
@@ -151,12 +161,6 @@ button:focus {
 
 button svg {
   margin-right: 5px;
-}
-
-.refresh {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 button.icon {
