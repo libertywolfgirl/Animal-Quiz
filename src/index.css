@@ -152,3 +152,9 @@ button:focus {
 button svg {
   margin-right: 5px;
 }
+
+.icon {
+  padding: 0;
+  border: none;
+  align-items: center;
+}
