@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { fas } from '@fortawesome/free-solid-svg-icons'
+import 'font-awesome/css/font-awesome.min.css';
 
 export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -81,7 +82,7 @@ export default function App() {
           <div className="score-section">
             You scored {score} out of {questions.length}
           </div>
-          <button><i className="fas fa-sync" /></button>
+            <button><i className="fas fa-sync"></i></button>
           </>
         ) : (
           <>
