@@ -1,6 +1,7 @@
 // https://www.freecodecamp.org/news/author/chris/
 
 import React, { useState } from "react";
+import { fas } from '@fortawesome/free-solid-svg-icons'
 
 export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
