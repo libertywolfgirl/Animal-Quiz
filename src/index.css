@@ -153,8 +153,19 @@ button svg {
   margin-right: 5px;
 }
 
-.icon {
+.refresh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.icon {
   padding: 0;
   border: none;
+  border-radius: 0;
+  width: 10px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }

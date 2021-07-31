@@ -1,8 +1,8 @@
 // https://www.freecodecamp.org/news/author/chris/
 
 import React, { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSync } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSync } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -71,18 +71,23 @@ export default function App() {
           alt="African Grey Parrot"
         />
         <p>
-          My name is Lily. I am an African Grey parrot from Massachusetts. I love trivia! Can you
-          pass my quiz?
+          My name is Lily. I am an African Grey parrot from Massachusetts. I
+          love trivia! Can you pass my quiz?
         </p>
       </header>
       <h2>QUIZ</h2>
       <div className="app">
         {showScore ? (
           <>
-          <div className="score-section">
-            You scored {score} out of {questions.length}
-          </div>
-            <button className="icon"><FontAwesomeIcon icon={faSync} /></button>
+            <div className="score-section">
+              You scored {score} out of {questions.length}
+            </div>
+            <div className="refresh">
+              <p>Try again?</p>
+              <button className="icon">
+                <FontAwesomeIcon icon={faSync} className="refresh" />
+              </button>
+            </div>
           </>
         ) : (
           <>
