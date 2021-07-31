@@ -69,16 +69,21 @@ export default function App() {
           alt="African Grey Parrot"
         />
         <p>
-          My name is Lily. I am an African Grey parrot. I love trivia! Can you
-          pass my quiz?
+          My name is Lily. I am an African Grey parrot from Massachusetts. I
+          love trivia! Can you pass my quiz?
         </p>
       </header>
       <h2>QUIZ</h2>
       <div className="app">
         {showScore ? (
-          <div className="score-section">
-            You scored {score} out of {questions.length}
-          </div>
+          <>
+            <div className="score-section">
+              You scored {score} out of {questions.length}
+            </div>
+            <button>
+              <i className="fas fa-sync" />
+            </button>
+          </>
         ) : (
           <>
             <div className="question-section">
