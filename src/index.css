@@ -23,6 +23,12 @@ body {
   }
 }
 
+@media (max-width: 28.75em) {
+  a {
+    padding: 5px;
+  }
+}
+
 header {
   display: flex;
   flex-direction: column;
