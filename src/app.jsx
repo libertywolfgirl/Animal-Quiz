@@ -90,7 +90,7 @@ export default function App() {
       ]
     },
     {
-      questionText: "TWhat is the proper name for a group of kittens?",
+      questionText: "What is the proper name for a group of kittens?",
       answerOptions: [
         { answerText: "Kindle", isCorrect: true },
         { answerText: "Clan", isCorrect: false },

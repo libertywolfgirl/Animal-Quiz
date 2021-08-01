@@ -19,7 +19,7 @@ body {
 
 @media (max-width: 28.75em) {
   body {
-    width: 25rem;
+    width: 400px;
   }
 }
 
@@ -37,6 +37,15 @@ img {
   object-fit: cover;
 }
 
+@media (max-width: 28.75em) {
+  img {
+    max-width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 footer {
   margin-bottom: 1.5rem;
 }
@@ -48,8 +57,11 @@ h1 {
 
 @media (max-width: 28.75em) {
   h1 {
-    width: 200px;
+    max-width: 400px;
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -60,6 +72,15 @@ h2 {
 p {
   margin: 1rem;
   padding: 10px;
+}
+
+@media (max-width: 28.75em) {
+  p {
+    width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .wrapper {
@@ -81,6 +102,15 @@ p {
   justify-content: space-evenly;
   margin-bottom: 25px;
   align-items: center;
+}
+
+@media (max-width: 28.75em) {
+  .app {
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .score-section {
@@ -132,6 +162,16 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 28.75em) {
+  .refresh {
+    max-height: 200px;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 button {
