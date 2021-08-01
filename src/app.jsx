@@ -11,7 +11,8 @@ export default function App() {
 
   const questions = [
     {
-      questionText: "Which mammal is known to have the most powerful bite in the world?",
+      questionText:
+        "Which mammal is known to have the most powerful bite in the world?",
       answerOptions: [
         { answerText: "Lion", isCorrect: false },
         { answerText: "Alligator", isCorrect: false },
@@ -20,7 +21,8 @@ export default function App() {
       ]
     },
     {
-      questionText: "What object does a male penguin often gift to a female penguin to win her over?",
+      questionText:
+        "What object does a male penguin often gift to a female penguin to win her over?",
       answerOptions: [
         { answerText: "Twig", isCorrect: false },
         { answerText: "Rock", isCorrect: true },
@@ -29,7 +31,8 @@ export default function App() {
       ]
     },
     {
-      questionText: "Which bird is known to have the largest wingspan on the planet?",
+      questionText:
+        "Which bird is known to have the largest wingspan on the planet?",
       answerOptions: [
         { answerText: "Albatross", isCorrect: true },
         { answerText: "African Grey", isCorrect: false },
@@ -38,7 +41,8 @@ export default function App() {
       ]
     },
     {
-      questionText: "Which popular sea creature has the ability to clone itself?",
+      questionText:
+        "Which popular sea creature has the ability to clone itself?",
       answerOptions: [
         { answerText: "Sponge", isCorrect: false },
         { answerText: "Seahorse", isCorrect: false },
@@ -47,12 +51,13 @@ export default function App() {
       ]
     },
     {
-      questionText: "What is the capital of France?",
+      questionText:
+        "What is the only continent in the world known to be snake-free?",
       answerOptions: [
-        { answerText: "New York", isCorrect: false },
-        { answerText: "London", isCorrect: false },
-        { answerText: "Paris", isCorrect: true },
-        { answerText: "Dublin", isCorrect: false }
+        { answerText: "Australia", isCorrect: false },
+        { answerText: "Asia", isCorrect: false },
+        { answerText: "Antartica", isCorrect: true },
+        { answerText: "Europe", isCorrect: false }
       ]
     },
     {
@@ -65,39 +70,41 @@ export default function App() {
       ]
     },
     {
-      questionText: "The iPhone was created by which company?",
+      questionText:
+        "In North America, which rodent is known to be the largest?",
       answerOptions: [
-        { answerText: "Apple", isCorrect: true },
-        { answerText: "Intel", isCorrect: false },
-        { answerText: "Amazon", isCorrect: false },
-        { answerText: "Microsoft", isCorrect: false }
+        { answerText: "Beaver", isCorrect: true },
+        { answerText: "Badger", isCorrect: false },
+        { answerText: "Gerbil", isCorrect: false },
+        { answerText: "Muskrat", isCorrect: false }
       ]
     },
     {
-      questionText: "How many Harry Potter books are there?",
+      questionText:
+        "In what year did the bald eagle become the national emblem and mascot of the United States of America?",
       answerOptions: [
-        { answerText: "1", isCorrect: false },
-        { answerText: "4", isCorrect: false },
-        { answerText: "6", isCorrect: false },
-        { answerText: "7", isCorrect: true }
+        { answerText: "1776", isCorrect: false },
+        { answerText: "1787", isCorrect: false },
+        { answerText: "1860", isCorrect: false },
+        { answerText: "1789", isCorrect: true }
       ]
     },
     {
-      questionText: "The iPhone was created by which company?",
+      questionText: "TWhat is the proper name for a group of kittens?",
       answerOptions: [
-        { answerText: "Apple", isCorrect: true },
-        { answerText: "Intel", isCorrect: false },
-        { answerText: "Amazon", isCorrect: false },
-        { answerText: "Microsoft", isCorrect: false }
+        { answerText: "Kindle", isCorrect: true },
+        { answerText: "Clan", isCorrect: false },
+        { answerText: "Herd", isCorrect: false },
+        { answerText: "Pack", isCorrect: false }
       ]
     },
     {
-      questionText: "How many Harry Potter books are there?",
+      questionText: "Which parrot has the biggest vocabulary?",
       answerOptions: [
-        { answerText: "1", isCorrect: false },
-        { answerText: "4", isCorrect: false },
-        { answerText: "6", isCorrect: false },
-        { answerText: "7", isCorrect: true }
+        { answerText: "Budgie", isCorrect: false },
+        { answerText: "Quaker Parrot", isCorrect: false },
+        { answerText: "Amazon Parrot", isCorrect: false },
+        { answerText: "African Grey", isCorrect: true }
       ]
     }
   ];
