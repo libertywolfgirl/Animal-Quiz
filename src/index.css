@@ -39,10 +39,7 @@ img {
 
 @media (max-width: 28.75em) {
   img {
-    max-width: 375px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 85%;
   }
 }
 
@@ -59,9 +56,6 @@ h1 {
   h1 {
     max-width: 400px;
     font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -76,10 +70,7 @@ p {
 
 @media (max-width: 28.75em) {
   p {
-    width: 375px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 400px;
   }
 }
 
@@ -112,10 +103,7 @@ p {
 
 @media (max-width: 28.75em) {
   .app {
-    max-width: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 85%;
   }
 }
 
@@ -172,11 +160,8 @@ p {
 
 @media (max-width: 28.75em) {
   .refresh {
-    max-height: 200px;
-    max-width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    width: 60%;
   }
 }
 
