@@ -18,14 +18,8 @@ body {
 }
 
 @media (max-width: 28.75em) {
-  body {
-    width: 400px;
-  }
-}
-
-@media (max-width: 28.75em) {
   a {
-    padding: 5px;
+    padding: 4px;
   }
 }
 
@@ -94,6 +88,12 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 28.75em) {
+  .wrapper {
+    width: 100%;
+  }
 }
 
 .app {
