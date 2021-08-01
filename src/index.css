@@ -17,12 +17,6 @@ body {
   min-height: 100vh;
 }
 
-@media (max-width: 28.75em) {
-  a {
-    padding: 4px;
-  }
-}
-
 header {
   display: flex;
   flex-direction: column;
