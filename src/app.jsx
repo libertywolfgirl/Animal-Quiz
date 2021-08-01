@@ -11,6 +11,42 @@ export default function App() {
 
   const questions = [
     {
+      questionText: "Which mammal is known to have the most powerful bite in the world?",
+      answerOptions: [
+        { answerText: "Lion", isCorrect: false },
+        { answerText: "Alligator", isCorrect: false },
+        { answerText: "Hippopotamus", isCorrect: true },
+        { answerText: "Rhinoceros", isCorrect: false }
+      ]
+    },
+    {
+      questionText: "What object does a male penguin often gift to a female penguin to win her over?",
+      answerOptions: [
+        { answerText: "Twig", isCorrect: false },
+        { answerText: "Rock", isCorrect: true },
+        { answerText: "Leaf", isCorrect: false },
+        { answerText: "Fish", isCorrect: false }
+      ]
+    },
+    {
+      questionText: "Which bird is known to have the largest wingspan on the planet?",
+      answerOptions: [
+        { answerText: "Albatross", isCorrect: true },
+        { answerText: "African Grey", isCorrect: false },
+        { answerText: "Turkey Vulture", isCorrect: false },
+        { answerText: "Bald Eagle", isCorrect: false }
+      ]
+    },
+    {
+      questionText: "Which popular sea creature has the ability to clone itself?",
+      answerOptions: [
+        { answerText: "Sponge", isCorrect: false },
+        { answerText: "Seahorse", isCorrect: false },
+        { answerText: "Crab", isCorrect: false },
+        { answerText: "Jellyfish", isCorrect: true }
+      ]
+    },
+    {
       questionText: "What is the capital of France?",
       answerOptions: [
         { answerText: "New York", isCorrect: false },
@@ -20,12 +56,30 @@ export default function App() {
       ]
     },
     {
-      questionText: "Who is CEO of Tesla?",
+      questionText: "Which bird is unable to move their eyes?",
       answerOptions: [
-        { answerText: "Jeff Bezos", isCorrect: false },
-        { answerText: "Elon Musk", isCorrect: true },
-        { answerText: "Bill Gates", isCorrect: false },
-        { answerText: "Tony Stark", isCorrect: false }
+        { answerText: "Cockatoo", isCorrect: false },
+        { answerText: "Owl", isCorrect: true },
+        { answerText: "Hawk", isCorrect: false },
+        { answerText: "Ostrich", isCorrect: false }
+      ]
+    },
+    {
+      questionText: "The iPhone was created by which company?",
+      answerOptions: [
+        { answerText: "Apple", isCorrect: true },
+        { answerText: "Intel", isCorrect: false },
+        { answerText: "Amazon", isCorrect: false },
+        { answerText: "Microsoft", isCorrect: false }
+      ]
+    },
+    {
+      questionText: "How many Harry Potter books are there?",
+      answerOptions: [
+        { answerText: "1", isCorrect: false },
+        { answerText: "4", isCorrect: false },
+        { answerText: "6", isCorrect: false },
+        { answerText: "7", isCorrect: true }
       ]
     },
     {
